@@ -1,4 +1,4 @@
-import foto from '../../assets/hero.png'
+
 import { AboutMe } from '../components/AboutMe'
 import { FaAdjust } from 'react-icons/fa'
 
@@ -22,8 +22,10 @@ export function AuthLayout(){
             </div>
             <div className='rounded-2xl h-[90%] w-[68%] ml-16 bg-black 
             transition-all ease-in-out'>
-              <img src={foto} className='w-[100%] h-[100%] object-cover 
-              transition-all ease-in-out grayscale'/>
+              <img 
+                src={"https://avatars.githubusercontent.com/u/24811628?s=400&u=943c35f91fbe081c029b0f94485765b3432a64f8&v=4"}
+                className='w-[100%] h-[100%] object-scale-down
+                transition-all ease-in-out '/>
             </div>
           </div>
 
@@ -37,16 +39,20 @@ export function AuthLayout(){
         
       </main>
 
-      <div className='controls'>
-        <div id='home' className='bg-blue-900 text-red-900'>TESTE
-          <IconHome  className='text-red-700'/>
+      <div className='fixed z-10 top-[30%] right-[3%] flex flex-col items-center justify-center transform'>
+        <div id='home' className='p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md bg-slate-700'>
+          <IconHome  className='text-white '/>
         </div>
       </div>
 
-      <div className='bg-red-950 w-full'>
+      <div 
+        className='top-[5%] right-[3%] w-16 h-16 rounded-[50%]
+        bg-slate-700 cursor-pointer fixed flex justify-center 
+        items-center shadow-[0 3px 15px rgba(0, 0, 0, 0.3)]
+        transition-all ease-in-out'>
         <FaAdjust size={24} />
       </div>
-
+    
 
     </>
   )
