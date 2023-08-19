@@ -1,6 +1,6 @@
 
 import { AboutMe } from '../components/AboutMe'
-import { FaAdjust } from 'react-icons/fa'
+import { FaAdjust, FaUser, FaBriefcase, FaEnvelopeOpen} from 'react-icons/fa'
 
 import { IconHome } from '../components/IconHome'
 
@@ -42,6 +42,25 @@ export function AuthLayout(){
       <div className='fixed z-10 top-[30%] right-[3%] flex flex-col items-center justify-center transform'>
         <div id='home' className='p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md bg-slate-700'>
           <IconHome  className='text-white '/>
+        </div>
+      </div>
+
+      
+      <div className='fixed z-10 top-[40%] right-[3%] flex flex-col items-center justify-center transform'>
+        <div id='home' className='p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md bg-slate-700'>
+          <FaUser  className='text-white '/>
+        </div>
+      </div>
+      
+      <div className='fixed z-10 top-[50%] right-[3%] flex flex-col items-center justify-center transform'>
+        <div id='home' className='p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md bg-slate-700'>
+          <FaBriefcase  className='text-white '/>
+        </div>
+      </div>
+      
+      <div className='fixed z-10 top-[60%] right-[3%] flex flex-col items-center justify-center transform'>
+        <div id='home' className='p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md bg-slate-700'>
+          <FaEnvelopeOpen  className='text-white '/>
         </div>
       </div>
 
