@@ -1,9 +1,9 @@
 import { FaBriefcase, FaEnvelopeOpen, FaUser } from "react-icons/fa";
 import { AboutMe } from "./AboutMe";
 import { IconHome } from "./IconHome";
-import { ProfileCard } from "./ProfileCard";
 
-export function Home(){
+
+export function About(){
   return(
     <>
       <header 
@@ -21,11 +21,6 @@ export function Home(){
                 clip-path-polygon[0 0, 46% 0, 79% 100%, 0% 100%]'
               ></div>
               
-              
-              <ProfileCard/>
-            
-
-
             </div>
 
             <div className='flex flex-col justify-center pr-72'>
@@ -38,7 +33,7 @@ export function Home(){
 
       <div >
         <div className='fixed z-10 top-[30%] right-[3%] flex flex-col items-center justify-center transform  '>
-          <div id='home' className='p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0  bg-green-700  ' >
+          <div id='home' className='p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0  bg-slate-700  ' >
            
            <a href="/">
             <IconHome  className='text-white '/>
@@ -48,7 +43,7 @@ export function Home(){
         </div>
         
         <div className='fixed z-10 top-[40%] right-[3%] flex flex-col items-center justify-center transform'>
-          <div id='about' className='p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md bg-slate-700'>
+          <div id='about' className='p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md bg-green-700 '>
             
             <a href="/about"> 
               <FaUser  className='text-white '/>
