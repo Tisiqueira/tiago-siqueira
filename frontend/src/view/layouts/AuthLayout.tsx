@@ -53,13 +53,12 @@ export function AuthLayout(){
                 <div className="left-about">
                     <h4>Information About me</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Eveniet labore nihil obcaecati consequatur. Debitis error doloremque, 
-                        vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
-                        delectus dolore fugiat exercitationem a, 
-                        ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Harum non necessitatibus deleniti eum soluta.
+                       
+                        Com um histórico sólido de mais de cinco anos de dedicação à Tecnologia da Informação, desempenho um papel crucial como suporte de excelência aos usuários, garantindo a continuidade operacional e a satisfação do cliente. No presente, meu foco está na vanguarda da transformação digital, onde lidero projetos com maestria, aplicando metodologias ágeis que asseguram resultados de alto impacto.
+
+                        Minhas habilidades técnicas e ferramentas empregadas são testemunho da minha busca pela excelência. Com proficiência em UiPath (RPA), Lecom (BPMN), Azure DevOps, React e JavaScript, sou capaz de abraçar os desafios mais complexos com soluções inovadoras. Minha maestria em tecnologias fundamentais, como HTML5 e CSS3, assegura a criação de interfaces cativantes e intuitivas.
+
+                        Minha atitude proativa e apaixonada pela melhoria contínua me permite não apenas acompanhar as últimas tendências, mas também liderar a adoção de abordagens visionárias em nossos projetos. Estou comprometido(a) em alcançar os mais altos padrões de desempenho e estou ansioso(a) para contribuir com uma equipe que compartilha a mesma paixão pela excelência e inovação.
                     </p>
                     <div className="btn-con">
                         <a href="#" className="main-btn">
