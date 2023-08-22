@@ -6,7 +6,7 @@ export function ProfileCard(){
             >
             <img 
                 src={"https://avatars.githubusercontent.com/u/24811628?s=400&u=943c35f91fbe081c029b0f94485765b3432a64f8&v=4"}
-                className='w-[100%] h-[100%] object-cover transition-all ease-in-out grayscale ' />
+                className='w-[80%] h-[80%] m-10 rounded-sm object-cover transition-all ease-in-out grayscale-0 ' />
         </div>
                    
     )
