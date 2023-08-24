@@ -2,7 +2,7 @@ import { IconDownload } from './IconDownload'
 
 export function Cv (){
   return(
-    <div className="btn-con flex self-start">
+    <div className="btn-con flex self-auto mt-4 ml-20">
       <a 
         href="" 
         className="main-btn rounded-[30px] text-inherit font-semibold relative border border-solid border-green-800

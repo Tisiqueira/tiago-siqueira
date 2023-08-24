@@ -49,14 +49,14 @@ export function AuthLayout(){
             <div className="main-title">
                 <h2>About <span>me</span><span className="bg-text">my stats</span></h2>
             </div>
-            <div className="about-container">
+            <div className="about-container grid grid-cols-2 pt-12 pb-20">
                 <div className="left-about">
                     <h4>Information About me</h4>
                     <p>
                        
                         Com um histórico sólido de mais de cinco anos de dedicação à Tecnologia da Informação, desempenho um papel crucial como suporte de excelência aos usuários, garantindo a continuidade operacional e a satisfação do cliente. No presente, meu foco está na vanguarda da transformação digital, onde lidero projetos com maestria, aplicando metodologias ágeis que asseguram resultados de alto impacto.
 
-                        Minhas habilidades técnicas e ferramentas empregadas são testemunho da minha busca pela excelência. Com proficiência em UiPath (RPA), Lecom (BPMN), Azure DevOps, React e JavaScript, sou capaz de abraçar os desafios mais complexos com soluções inovadoras. Minha maestria em tecnologias fundamentais, como HTML5 e CSS3, assegura a criação de interfaces cativantes e intuitivas.
+                        Minhas habilidades técnicas e ferramentas empregadas são testemunho da minha busca pela excelência. Com proficiência em UiPath (RPA), Lecom (BPMN), Azure DevOps,Power Apps, Power Virtual Agents, React e JavaScript, sou capaz de abraçar os desafios mais complexos com soluções inovadoras. Minha maestria em tecnologias fundamentais, como HTML5 e CSS3, assegura a criação de interfaces cativantes e intuitivas.
 
                         Minha atitude proativa e apaixonada pela melhoria contínua me permite não apenas acompanhar as últimas tendências, mas também liderar a adoção de abordagens visionárias em nossos projetos. Estou comprometido(a) em alcançar os mais altos padrões de desempenho e estou ansioso(a) para contribuir com uma equipe que compartilha a mesma paixão pela excelência e inovação.
                     </p>
@@ -219,9 +219,9 @@ export function AuthLayout(){
         </section>
 
       </main>
-      <div >
+       <div >
         <div className='fixed z-10 top-[30%] right-[3%] flex flex-col items-center justify-center transform  '>
-          <div id='home' className={`p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 ${currentPath === '/' ? 'bg-green-700' : bgColor}`} >
+          <div id='home' className={`p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 hover:border-[2px] hover:border-green-700  ${currentPath === '/' ? 'bg-green-700' : bgColor}`} >
            
            <a href="/">
             <IconHome  className='text-white '/>
@@ -231,7 +231,7 @@ export function AuthLayout(){
         </div>
         
         <div className='fixed z-10 top-[40%] right-[3%] flex flex-col items-center justify-center transform'>
-          <div id='about' className={`p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md ${currentPath === '/about' ? 'bg-green-700' : bgColor}`}>
+          <div id='about' className={`p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md hover:border-[2px] hover:border-green-700  ${currentPath === '/about' ? 'bg-green-700' : bgColor}`}>
             
             <a href="/about"> 
               <FaUser  className='text-white '/>
@@ -241,7 +241,7 @@ export function AuthLayout(){
         </div>
         
         <div className='fixed z-10 top-[50%] right-[3%] flex flex-col items-center justify-center transform'>
-          <div id='experience' className={`p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md ${currentPath === '/experience' ? 'bg-green-700' : bgColor}`}>
+          <div id='experience' className={`p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md hover:border-[2px] hover:border-green-700 ${currentPath === '/experience' ? 'bg-green-700' : bgColor}`}>
             
             <a href="/experience">
               <FaBriefcase  className='text-white '/>
@@ -251,19 +251,19 @@ export function AuthLayout(){
         </div>
         
         <div className='fixed z-10 top-[60%] right-[3%] flex flex-col items-center justify-center transform'>
-          <div id='contact' className={`p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md ${currentPath === '/contact' ? 'bg-green-700' : bgColor}`}>
+          <div id='contact' className={`p-4 cursor-pointer w-14 h-14 rounded-[50%] flex justify-center mt-3 mb-0 shadow-md hover:border-[2px] hover:border-green-700 ${currentPath === '/contact' ? 'bg-green-700' : bgColor}`}>
             <a href="/contact">
               <FaEnvelopeOpen  className='text-white '/>
             </a>
           </div>
         </div>
-      </div>
+      </div> 
 
       <div 
         className='top-[5%] right-[3%] w-16 h-16 rounded-[50%]
         bg-slate-700 cursor-pointer fixed flex justify-center 
         items-center shadow-[0 3px 15px rgba(0, 0, 0, 0.3)]
-        transition-all ease-in-out'>
+        hover:border-[2px] hover:border-green-700'>
         <FaAdjust size={24} />
       </div>   
 
