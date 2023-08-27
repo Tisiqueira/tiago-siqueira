@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FaLocationPin } from "react-icons/fa6";
+
 
 export function ProfileCard(){
 
@@ -82,11 +84,11 @@ export function ProfileCard(){
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
             <div className="profile-wrapper w-[350px] h-[450px] relative">
-                <div className="profile flex flex-col items-center relative overflow-hidden w-[350px] h-[450px] rounded-2xl shadow-md cursor-pointer transition-[0.5s] group">
-                    <div className="profile-image absolute top-0 left-0 w-full h-full z-[2] bg-black ">
+                <div className="profile flex flex-col items-center relative overflow-hidden w-[350px] h-[450px] rounded-2xl shadow-md cursor-pointer transition-[0.5s] group ">
+                    <div className="profile-image absolute top-0 left-0 w-full h-full z-[2] bg-white ">
                         <img
                             className={`h-full w-full object-cover transition-transform ${
-                                isHovered ? "translate-y-[-50px]" : "translate-y-0"
+                                isHovered ? "translate-y-[-150px]" : "translate-y-0"
                             }`}
                             src={"https://avatars.githubusercontent.com/u/24811628?s=400&u=943c35f91fbe081c029b0f94485765b3432a64f8&v=4"}
                             alt="Profile"
@@ -208,11 +210,11 @@ export function ProfileCard(){
                             </a>
                         </li>
                     </ul>
-                    <div className={`profile-name border bg-red-400 absolute bottom-0 left-0  w-full h-[150px] p-4 z-[1] text-[#333] text-left
-                    ${isHovered ? "text-cyan-50 bg-white" : "bg-white text-black"}`}>
-                        <h2 className="mb-2">Tiago Siqueira</h2>
-                        <div className="profile-bio opacity-95 ">
-                            <span>São José dos Campos - SP</span>
+                    <div className=" absolute bottom-10 mx-1 sibling-element group-hover:text-black group-hover:z-[2]">
+                        <h2 className="text-black text-center">Vamos inovar?</h2>
+                        <div className="text-green-800 flex mt-5">
+                            <FaLocationPin />
+                            <span className="ml-2">São José dos Campos - SP</span>
                         </div>
                     </div>
                 </div>
