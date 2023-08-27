@@ -51,15 +51,15 @@ export function ProfileCard(){
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => {
-      console.log("enrei")  
+        
       setIsHovered(true);
     };
   
     const handleMouseLeave = () => {
-      setTimeout(() => {
         setIsHovered(false);
+      setTimeout(() => {
         console.log(isHovered)
-      }, 500);
+      },);
     };
 
     const rotationStyleLinkedin = isHoveredLinkedin ? 'rotateY(360deg)' : 'rotateY(0deg)';
