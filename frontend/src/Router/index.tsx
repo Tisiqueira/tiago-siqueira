@@ -8,7 +8,6 @@ export function Router(){
     <BrowserRouter>
       <Routes>
         <Route element={<AuthLayout/>}>
-
           <Route path="/"/>
         </Route>
       </Routes>
