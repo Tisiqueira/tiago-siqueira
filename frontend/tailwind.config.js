@@ -3,7 +3,9 @@ export default {
   content: [ "./index.html",
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+     
+    },
   },
   plugins: [
     // eslint-disable-next-line no-undef
