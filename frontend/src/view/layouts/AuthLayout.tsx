@@ -19,14 +19,15 @@ export function AuthLayout(){
         console.log(SectionId)
         setActiveSection(SectionId);
     }
-    
+
+        
     return (
         <>
             
             <header 
                 id='home' 
                 className={`container header min-h-screen text-white overflow-hidden p-0 important
-                ${activeSection === 'home' ? 'active animate-spin  transform translate-y-0 scale-y-100 ease-in' : 'hidden transition-all ease-out'}`}
+                ${activeSection === 'home' ? `active  animate-slide-down` : 'animate-slide-left '}`}
 
                 
                 >
@@ -44,11 +45,18 @@ export function AuthLayout(){
                         backgroundColor: '#27AE60'}}
                     ></div>
                     
-                    <ProfileCard/>
+                    <span className={`
+                    ${activeSection === 'home' ? `active  ` : 'hidden '}`}>
+                    <ProfileCard />
+
+                    </span>
                     </div>
 
-                    <div className='high-header flex flex-col justify-center pr-70'>
-                    <AboutMe />
+                    <div className={`high-header flex flex-col justify-center pr-70
+                    ${activeSection === 'home' ? `active  ` : 'hidden '}`}
+                    
+                    >
+                        <AboutMe />
                     </div>
                 
                 </div>
@@ -59,7 +67,7 @@ export function AuthLayout(){
                 
                 <section 
                     id="about" className={`container about
-                    ${activeSection === 'about' ? 'active' : ''}`}
+                    ${activeSection === 'about' ? 'active animate-slide-left' : ''}`}
                 >
 
                     <div className="main-title">
