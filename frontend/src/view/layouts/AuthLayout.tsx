@@ -10,9 +10,12 @@ export function AuthLayout(){
     const bgColor = useRef('bg-slate-700')
     const [activeButton, setActiveButton] = useState('home');
     const [activeSection, setActiveSection] = useState('home');
+    const [activeClass, setactiveClass] = useState('active')
 
     function handleButtonClick (buttonId: SetStateAction<string>) {
         setActiveButton(buttonId);
+        setactiveClass(`active animate-slide-right`)
+        
     }
 
     function handleButtonClickSection (SectionId: SetStateAction<string>) {
@@ -27,12 +30,15 @@ export function AuthLayout(){
             <header 
                 id='home' 
                 className={`container header min-h-screen text-white overflow-hidden p-0 important
-                ${activeSection === 'home' ? `active  animate-slide-down` : 'animate-slide-left '}`}
+                `}
 
                 
                 >
                 
-                <div className='header-content grid grid-cols-2 min-h-screen'>
+                <div className={`header-content grid grid-cols-2 min-h-screen
+                ${activeSection === 'home' ? 
+                (`${activeClass}` === 'active' ? '': `${activeClass}`) : 'animate-slide-left '}
+                `}>
                     
                     <div className='left-header flex items-center relative'>
                     <div 
