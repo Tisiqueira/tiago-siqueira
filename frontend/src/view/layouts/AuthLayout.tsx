@@ -30,14 +30,14 @@ export function AuthLayout(){
             <header 
                 id='home' 
                 className={`container header min-h-screen text-white overflow-hidden p-0 important
-                `}
+                ${activeSection === 'home' ? `active  ` : 'hidden '}`}
 
                 
                 >
                 
                 <div className={`header-content grid grid-cols-2 min-h-screen
                 ${activeSection === 'home' ? 
-                (`${activeClass}` === 'active' ? '': `${activeClass}`) : 'animate-slide-left '}
+                (`${activeClass}` === 'active' ? '': `${activeClass}`) : 'hidden'}
                 `}>
                     
                     <div className='left-header flex items-center relative'>
