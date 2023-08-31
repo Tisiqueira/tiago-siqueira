@@ -11,12 +11,35 @@ export function AuthLayout(){
     const bgColor = useRef('bg-slate-700')
     const [activeButton, setActiveButton] = useState('home');
     const [activeSection, setActiveSection] = useState('home');
-    const [activeClass, setactiveClass] = useState('active')
+    const [activeClass, setactiveClass] = useState('active');
+    const [activePolygonBar, setActivePolygonBar] = useState('');
+    let styleBar
+
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    function handleActivePolygonBar(_SectionId: SetStateAction<string>){
+        console.log(_SectionId)
+        
+    }
 
     function handleButtonClick (buttonId: SetStateAction<string>) {
         setActiveButton(buttonId);
         setactiveClass(`active animate-slide-right`)
         
+        if(buttonId === "about"){
+            console.log("To aqui")
+            
+            setTimeout(()=>{
+                setActivePolygonBar('active')
+                styleBar = `
+
+                clipPath: 'polygon(46% 0, 100% 0, 90% 100%, 30% 100%)',
+                                width: '100%',
+                                height: '100%',
+                                backgroundColor: '#27AE60
+                            
+                `
+            },2000)
+        }
     }
 
     function handleButtonClickSection (SectionId: SetStateAction<string>) {
@@ -73,46 +96,15 @@ export function AuthLayout(){
 
             <main>
                  
-                <div className={`header-content grid grid-cols-2 min-h-screen
-                    ${activeSection === 'home' ? 
-                    (`${activeClass}` === 'active' ? '': `${activeClass}`) : 'hidden'}
-                    `}>
-                        
-                        <div className='left-header flex items-center relative'>
-                        <div 
-                            className='h-shape transition-all ease-in-out w-[65%] h-[100%]
-                            bg-green-800 absolute left-0 top-0 z-[-1] 
-                            '
-                            style={{clipPath: 'polygon(0 0, 46% 0, 79% 100%, 0% 100%)',
-                            
-                            width: '80%',
-                            height: '100%',
-                            backgroundColor: '#27AE60'}}
-                        ></div>
-                        
-                        <span className={`
-                        ${activeSection === 'home' ? `active  ` : 'hidden '}`}>
-                        <ProfileCard />
-
-                        </span>
-                        </div>
-
-                        <div className={`high-header flex flex-col justify-center pr-70
-                        ${activeSection === 'home' ? `active  ` : 'hidden '}`}
-                        
-                        >
-                            <AboutMe />
-                        </div>
-                    
-                </div>
+                
 
                 <section  id="about" className={`container about
-                    ${activeSection === 'about' ? 'active animate-slide-left  grid grid-cols-2 min-h-screen' : 'hidden'}`}
-               >    
-                <div className="left-header flex items-center relative">
+                    ${activeSection === 'about' ? '  grid grid-cols-2 min-h-screen' : 'hidden'}`}
+                >    
+                    <div className="left-header flex items-center relative active animate-slide-left-div">
                         <div className="left-about ml-40">
                             <h4 className='text-green-800 text-2xl'>Resumo</h4>
-                            <p className='mt-2'>
+                            <p className='mt-10'>
                             
                                 Com um histórico sólido de mais de cinco anos de dedicação à Tecnologia da Informação, desempenho um papel crucial como suporte de excelência aos usuários, garantindo a continuidade operacional e a satisfação do cliente. No presente, meu foco está na vanguarda da transformação digital, onde lidero projetos com maestria, aplicando metodologias ágeis que asseguram resultados de alto impacto.
 
@@ -121,7 +113,7 @@ export function AuthLayout(){
                                 Minha atitude proativa e apaixonada pela melhoria contínua me permite não apenas acompanhar as últimas tendências, mas também liderar a adoção de abordagens visionárias em nossos projetos. Estou comprometido(a) em alcançar os mais altos padrões de desempenho e estou ansioso(a) para contribuir com uma equipe que compartilha a mesma paixão pela excelência e inovação.
                             </p>
                             <div className="btn-con">
-                                <span className="items-center justify-center ml-[100px]">
+                                <span className="items-center justify-center ml-[80%]">
                                     < Cv/>
                                 </span> 
                                 
@@ -131,16 +123,20 @@ export function AuthLayout(){
                         
                     </div>
                     <div 
-                        className='h-shape transition-all ease-in-out w-[65%] h-[100%]
-                        bg-green-800 absolute left-[50%] top-0 z-[-1] 
-                        '
-                        style={{clipPath: 'polygon(46% 0, 100% 0, 90% 100%, 30% 100%)',
+                        className={`${activePolygonBar === 'active' ? `animate-slide-left h-shape transition-all ease-in-out w-[65%] h-[100%]                absolute left-[50%] top-0 z-[-1] ` : 'hidden' }
+                        
+                        `}
+
+                        style= {{clipPath: 'polygon(46% 0, 100% 0, 90% 100%, 30% 100%)',
                         width: '100%',
                         height: '100%',
-                        backgroundColor: '#27AE60'}}
+                        backgroundColor: '#27AE60'
+                    }}       
                     >
                         
                     </div>
+                   
+                    
                 </section>
                 
             </main>
