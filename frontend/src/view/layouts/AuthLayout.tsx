@@ -72,14 +72,44 @@ export function AuthLayout(){
             </header>
 
             <main>
-                
-                <section 
-                    id="about" className={`container about
-                    ${activeSection === 'about' ? 'active animate-slide-left  flex flex-col items-center justify-center' : 'hidden'}`}
-                >
+                 
+                <div className={`header-content grid grid-cols-2 min-h-screen
+                    ${activeSection === 'home' ? 
+                    (`${activeClass}` === 'active' ? '': `${activeClass}`) : 'hidden'}
+                    `}>
+                        
+                        <div className='left-header flex items-center relative'>
+                        <div 
+                            className='h-shape transition-all ease-in-out w-[65%] h-[100%]
+                            bg-green-800 absolute left-0 top-0 z-[-1] 
+                            '
+                            style={{clipPath: 'polygon(0 0, 46% 0, 79% 100%, 0% 100%)',
+                            
+                            width: '80%',
+                            height: '100%',
+                            backgroundColor: '#27AE60'}}
+                        ></div>
+                        
+                        <span className={`
+                        ${activeSection === 'home' ? `active  ` : 'hidden '}`}>
+                        <ProfileCard />
 
+                        </span>
+                        </div>
+
+                        <div className={`high-header flex flex-col justify-center pr-70
+                        ${activeSection === 'home' ? `active  ` : 'hidden '}`}
+                        
+                        >
+                            <AboutMe />
+                        </div>
                     
-                    <div className="about-container grid grid-cols-2 pt-12 pb-20">
+                </div>
+
+                <section  id="about" className={`container about
+                    ${activeSection === 'about' ? 'active animate-slide-left  grid grid-cols-2 min-h-screen' : 'hidden'}`}
+               >    
+                <div className="left-header flex items-center relative">
                         <div className="left-about ml-40">
                             <h4 className='text-green-800 text-2xl'>Resumo</h4>
                             <p className='mt-2'>
@@ -91,25 +121,28 @@ export function AuthLayout(){
                                 Minha atitude proativa e apaixonada pela melhoria contínua me permite não apenas acompanhar as últimas tendências, mas também liderar a adoção de abordagens visionárias em nossos projetos. Estou comprometido(a) em alcançar os mais altos padrões de desempenho e estou ansioso(a) para contribuir com uma equipe que compartilha a mesma paixão pela excelência e inovação.
                             </p>
                             <div className="btn-con">
-                                <span className="items-center justify-center ml-[100px]">< Cv/></span>
-                                    
+                                <span className="items-center justify-center ml-[100px]">
+                                    < Cv/>
+                                </span> 
                                 
                             </div>
                         </div>
-                        <div 
+                        
+                        
+                    </div>
+                    <div 
                         className='h-shape transition-all ease-in-out w-[65%] h-[100%]
                         bg-green-800 absolute left-[50%] top-0 z-[-1] 
                         '
-                        style={{clipPath: 'polygon(54% 0, 100% 0, 100% 100%, 21% 100%)',
-                        width: '50%',
+                        style={{clipPath: 'polygon(46% 0, 100% 0, 90% 100%, 30% 100%)',
+                        width: '100%',
                         height: '100%',
                         backgroundColor: '#27AE60'}}
-                    ></div>
+                    >
                         
                     </div>
-                   
                 </section>
-
+                
             </main>
 
             <div>
