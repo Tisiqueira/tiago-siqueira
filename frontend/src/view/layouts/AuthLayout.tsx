@@ -103,15 +103,31 @@ export function AuthLayout(){
                 >    
                     <div className="left-header flex items-center relative active animate-slide-left-div">
                         <div className="left-about ml-40">
-                            <h4 className='text-green-800 text-2xl'>Resumo</h4>
-                            <p className='mt-10'>
+                            <h3 className='text-green-800 text-4xl animate-bounce animate-infinite'>Resumo</h3>
+                            <h4 className='mt-10 text-justify'  >
                             
-                                Com um histórico sólido de mais de cinco anos de dedicação à Tecnologia da Informação, desempenho um papel crucial como suporte de excelência aos usuários, garantindo a continuidade operacional e a satisfação do cliente. No presente, meu foco está na vanguarda da transformação digital, onde lidero projetos com maestria, aplicando metodologias ágeis que asseguram resultados de alto impacto.
-
-                                Minhas habilidades técnicas e ferramentas empregadas são testemunho da minha busca pela excelência. Com proficiência em UiPath (RPA), Lecom (BPMN), Azure DevOps,Power Apps, Power Virtual Agents, React e JavaScript, sou capaz de abraçar os desafios mais complexos com soluções inovadoras. Minha maestria em tecnologias fundamentais, como HTML5 e CSS3, assegura a criação de interfaces cativantes e intuitivas.
-
-                                Minha atitude proativa e apaixonada pela melhoria contínua me permite não apenas acompanhar as últimas tendências, mas também liderar a adoção de abordagens visionárias em nossos projetos. Estou comprometido(a) em alcançar os mais altos padrões de desempenho e estou ansioso(a) para contribuir com uma equipe que compartilha a mesma paixão pela excelência e inovação.
-                            </p>
+                                Com mais de 
+                                <span className='text-green-400 text-2xl animate-fade animate-infinite animate-duration-[2000ms] 
+                                 animate-ease-in-out '> cinco anos </span>
+                                
+                                de experiência dedicados à Tecnologia da Informação, tenho liderado projetos de transformação digital com destaque. Minhas habilidades abrangem tecnologias como: <br/> <br/>
+                                
+                                <span className='text-green-400 ml-10 text-center animate-fade animate-infinite animate-duration-[2000ms] 
+                                 animate-ease-in-out '> UiPath(RPA), </span> <br/>
+                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
+                                 animate-ease-in-out '>Lecom(BPMN), </span> <br/>
+                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
+                                 animate-ease-in-out '>Azure DevOps, </span> <br/>
+                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
+                                 animate-ease-in-out '>Power Apps,</span> <br/>
+                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
+                                 animate-ease-in-out '>Power Virtual Agents, </span> <br/>
+                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
+                                 animate-ease-in-out '>React e Node.</span> <br/>
+                                
+                                 <br/>Minha abordagem proativa e busca incessante por inovação me permitem liderar a adoção de práticas visionárias, sempre com foco na excelência.
+                                  
+                            </h4>
                             <div className="btn-con">
                                 <span className="items-center justify-center ml-[80%]">
                                     < Cv/>
