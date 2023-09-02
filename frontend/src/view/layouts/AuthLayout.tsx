@@ -138,6 +138,19 @@ export function AuthLayout(){
                         
                         
                     </div>
+                    <div className='w-full h-1/2 mt-[40%] ml-[40%] flex items-center relative border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
+                        <div >
+                            <label  className='sr-only'>Selecione a guia</label>
+                            <select id="tabs" className="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:text-green-800 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option>Estatisticas</option>
+                                <option>Projetos</option>
+                                <option>Informações adicionais</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    
                     <div 
                         className={`${activePolygonBar === 'active' ? `animate-slide-left h-shape transition-all ease-in-out w-[65%] h-[100%]                absolute left-[50%] top-0 z-[-1] ` : 'hidden' }
                         
