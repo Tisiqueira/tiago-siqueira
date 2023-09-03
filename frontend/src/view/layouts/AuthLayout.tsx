@@ -1,10 +1,10 @@
 import { SetStateAction, useRef, useState } from 'react'
-import { FaAdjust, FaBriefcase, FaEnvelopeOpen, FaReact, FaUser, } from 'react-icons/fa'
+import { FaAdjust, FaBriefcase, FaEnvelopeOpen, FaUser, } from 'react-icons/fa'
 
 import { IconHome } from '../components/IconHome'
 import { ProfileCard } from '../components/ProfileCard'
 import { AboutMe } from '../components/AboutMe'
-import { Cv } from '../components/Cv'
+
 import { Resumo } from '../components/Resumo'
 
 export function AuthLayout(){
@@ -17,11 +17,8 @@ export function AuthLayout(){
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     let styleBar = ``
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    function handleActivePolygonBar(_SectionId: SetStateAction<string>){
-        console.log(_SectionId)
-        
-    }
+    
+    
 
     function handleButtonClick (buttonId: SetStateAction<string>) {
         setActiveButton(buttonId);
@@ -104,7 +101,7 @@ export function AuthLayout(){
                     ${activeSection === 'about' ? '  grid grid-rows-2 min-h-screen' : 'hidden'}`}
                 >    
                     
-                    <div className='flex w-1 ml-[40%] mt-auto'>
+                    <div className='flex w-1 ml-[40%] mt-[10%]'>
                         
                         <Resumo />
                     </div>
