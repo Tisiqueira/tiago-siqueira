@@ -1,10 +1,11 @@
 import { SetStateAction, useRef, useState } from 'react'
-import { FaAdjust, FaBriefcase, FaEnvelopeOpen, FaUser, } from 'react-icons/fa'
+import { FaAdjust, FaBriefcase, FaEnvelopeOpen, FaReact, FaUser, } from 'react-icons/fa'
 
 import { IconHome } from '../components/IconHome'
 import { ProfileCard } from '../components/ProfileCard'
 import { AboutMe } from '../components/AboutMe'
 import { Cv } from '../components/Cv'
+import { Resumo } from '../components/Resumo'
 
 export function AuthLayout(){
 
@@ -13,7 +14,8 @@ export function AuthLayout(){
     const [activeSection, setActiveSection] = useState('home');
     const [activeClass, setactiveClass] = useState('active');
     const [activePolygonBar, setActivePolygonBar] = useState('');
-    let styleBar
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    let styleBar = ``
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     function handleActivePolygonBar(_SectionId: SetStateAction<string>){
@@ -99,56 +101,14 @@ export function AuthLayout(){
                 
 
                 <section  id="about" className={`container about
-                    ${activeSection === 'about' ? '  grid grid-cols-2 min-h-screen' : 'hidden'}`}
+                    ${activeSection === 'about' ? '  grid grid-rows-2 min-h-screen' : 'hidden'}`}
                 >    
-                    <div className="left-header flex items-center relative active animate-slide-left-div">
-                        <div className="left-about ml-40">
-                            <h3 className='text-green-800 text-4xl animate-bounce animate-infinite'>Resumo</h3>
-                            <h4 className='mt-10 text-justify'  >
-                            
-                                Com mais de 
-                                <span className='text-green-400 text-2xl animate-fade animate-infinite animate-duration-[2000ms] 
-                                 animate-ease-in-out '> cinco anos </span>
-                                
-                                de experiência dedicados à Tecnologia da Informação, tenho liderado projetos de transformação digital com destaque. Minhas habilidades abrangem tecnologias como: <br/> <br/>
-                                
-                                <span className='text-green-400 ml-10 text-center animate-fade animate-infinite animate-duration-[2000ms] 
-                                 animate-ease-in-out '> UiPath(RPA), </span> <br/>
-                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
-                                 animate-ease-in-out '>Lecom(BPMN), </span> <br/>
-                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
-                                 animate-ease-in-out '>Azure DevOps, </span> <br/>
-                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
-                                 animate-ease-in-out '>Power Apps,</span> <br/>
-                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
-                                 animate-ease-in-out '>Power Virtual Agents, </span> <br/>
-                                 <span className='text-green-400 ml-10 animate-fade animate-infinite animate-duration-[2000ms] 
-                                 animate-ease-in-out '>React e Node.</span> <br/>
-                                
-                                 <br/>Minha abordagem proativa e busca incessante por inovação me permitem liderar a adoção de práticas visionárias, sempre com foco na excelência.
-                                  
-                            </h4>
-                            <div className="btn-con">
-                                <span className="items-center justify-center ml-[80%]">
-                                    < Cv/>
-                                </span> 
-                                
-                            </div>
-                        </div>
+                    
+                    <div className='flex w-1 ml-[40%] mt-auto'>
                         
-                        
+                        <Resumo />
                     </div>
-                    <div className='w-full h-1/2 mt-[40%] ml-[40%] flex items-center relative border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
-                        <div >
-                            <label  className='sr-only'>Selecione a guia</label>
-                            <select id="tabs" className="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:text-green-800 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option>Estatisticas</option>
-                                <option>Projetos</option>
-                                <option>Informações adicionais</option>
-                            </select>
-                        </div>
-                    </div>
-
+                    
 
                     
                     <div 
@@ -164,7 +124,8 @@ export function AuthLayout(){
                     >
                         
                     </div>
-                   
+                    
+                
                     
                 </section>
                 
