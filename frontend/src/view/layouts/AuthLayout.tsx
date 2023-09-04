@@ -122,7 +122,10 @@ export function AuthLayout(){
                         
                     </div>
                     
-                
+                <div>
+                    
+                    
+                </div>
                     
                 </section>
                 
