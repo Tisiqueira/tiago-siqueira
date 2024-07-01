@@ -1,11 +1,13 @@
 import React from "react";
+import Header from "./Header";
 import DetailsTec from "./DetailsTec";
 
 function App() {
   return (
     <>
-      <h1>Tiago Alves Mastrogiacomo Siqueira</h1>
-      <h2>Tecnologias</h2>
+      <Header title="Tiago Alves Mastrogiacomo Siqueira">
+        <h2>Tecnologias</h2>
+      </Header>
 
       <hr />
 

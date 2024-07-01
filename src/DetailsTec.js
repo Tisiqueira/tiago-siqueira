@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function DetailsTec(props) {
   return (
@@ -11,3 +12,8 @@ export default function DetailsTec(props) {
     </>
   );
 }
+
+DetailsTec.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+};
