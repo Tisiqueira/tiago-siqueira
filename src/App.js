@@ -1,6 +1,14 @@
 import React from "react";
 import Header from "./Header";
-import DetailsTec from "./DetailsTec";
+import Tecnology from "./Tecnology";
+
+const tecnologies = [
+  { title: "HTML", subtitle: "Experiência de mais de 3 anos" },
+  { title: "CSS3", subtitle: "Experiência de mais de 3 anos" },
+  { title: "Javascript", subtitle: "Experiência de mais de 3 anos" },
+  { title: "React", subtitle: "Experiência de 1 ano" },
+  { title: "Node", subtitle: "Experiência de 1 ano" },
+];
 
 function App() {
   return (
@@ -11,30 +19,9 @@ function App() {
 
       <hr />
 
-      <DetailsTec
-        title="Javascript"
-        subtitle="Mais de 3 anos trabalhando utilizando Javascript no front-end"
-      />
-
-      <DetailsTec
-        title="HTML5 & css3"
-        subtitle="Mais de 3 anos trabalhando utilizando no front-end"
-      />
-
-      <DetailsTec
-        title="React"
-        subtitle="Mais de 3 anos trabalhando utilizando no front-end"
-      />
-
-      <DetailsTec
-        title="Uipath"
-        subtitle=" Mais de 3 anos trabalhando utilizando nas automações da empresa"
-      />
-
-      <DetailsTec
-        title="Power Apps"
-        subtitle="1 ano criando apliçãoes low-code para a empresa"
-      />
+      {tecnologies.map((tec) => (
+        <Tecnology key={tec.title} title={tec.title} subtitle={tec.subtitle} />
+      ))}
     </>
   );
 }
