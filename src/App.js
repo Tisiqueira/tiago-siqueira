@@ -34,6 +34,10 @@ function App() {
     ]);
   }
 
+  function handlRemoveTec(tecId) {
+    setPost((prevState) => prevState.filter((tec) => tec.id !== tecId));
+  }
+
   return (
     <>
       <Header title="Tiago Alves Mastrogiacomo Siqueira">
@@ -44,7 +48,13 @@ function App() {
       <hr />
 
       {tecnologies.map((tec) => (
-        <Tecnology key={tec.id} title={tec.title} subtitle={tec.subtitle} />
+        <Tecnology
+          key={tec.id}
+          onRemove={handlRemoveTec}
+          id={tec.id}
+          title={tec.title}
+          subtitle={tec.subtitle}
+        />
       ))}
     </>
   );
