@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Tecnology(props) {
   return (
@@ -9,3 +10,9 @@ export default function Tecnology(props) {
     </>
   );
 }
+
+Tecnology.PropTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  onRemove: PropTypes.shape.isRequired,
+};

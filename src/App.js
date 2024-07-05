@@ -8,19 +8,32 @@ function App() {
       id: Math.random(),
       title: "HTML",
       subtitle: "Experiência de mais de 3 anos",
+      read: true,
     },
     {
       id: Math.random(),
       title: "CSS3",
       subtitle: "Experiência de mais de 3 anos",
+      read: true,
     },
     {
       id: Math.random(),
       title: "Javascript",
       subtitle: "Experiência de mais de 3 anos",
+      read: true,
     },
-    { id: Math.random(), title: "React", subtitle: "Experiência de 1 ano" },
-    { id: Math.random(), title: "Node", subtitle: "Experiência de 1 ano" },
+    {
+      id: Math.random(),
+      title: "React",
+      subtitle: "Experiência de 1 ano",
+      read: false,
+    },
+    {
+      id: Math.random(),
+      title: "Node",
+      subtitle: "Experiência de 1 ano",
+      read: true,
+    },
   ]);
 
   function handleRefresh() {
