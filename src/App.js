@@ -34,8 +34,8 @@ function App() {
     ]);
   }
 
-  function handlRemoveTec(tecId) {
-    setPost((prevState) => prevState.filter((tec) => tec.id !== tecId));
+  function handleRemoveTec(tecId) {
+    setTecnologies((prevState) => prevState.filter((tec) => tec.id !== tecId));
   }
 
   return (
@@ -50,7 +50,7 @@ function App() {
       {tecnologies.map((tec) => (
         <Tecnology
           key={tec.id}
-          onRemove={handlRemoveTec}
+          onRemove={handleRemoveTec}
           id={tec.id}
           title={tec.title}
           subtitle={tec.subtitle}
