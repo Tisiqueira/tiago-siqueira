@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Header from "./Header";
-import Tecnology from "./Tecnology";
+import Header from "../Header";
+import Tecnology from "../Tecnology";
 
 function App() {
   const [tecnologies, setTecnologies] = useState([
