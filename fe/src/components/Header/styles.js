@@ -18,3 +18,9 @@ export const Container = styled.div`
     width: 50px;
   }
 `;
+
+export const Button = styled.button`
+  width: auto;
+  border: none;
+  background: ${({ theme }) => theme.colorBackground};
+`;
