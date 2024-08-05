@@ -1,3 +1,11 @@
+import Modal from "../../components/Modal"
+
 export default function Home() {
-  return "Homepage";
+  return (
+    <>
+    <p>Homepage</p>
+    <Modal />
+    </>
+
+  )
 }
