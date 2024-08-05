@@ -21,10 +21,6 @@ ButtonHeader.propyTypes = {
 
 }
 
-ButtonHeader.defaultProps = {
-  active: false
-
-}
 
 
 
