@@ -9,7 +9,9 @@ export default function Modal() {
           <button>Sobre</button>
           <button>Tecnologias</button>
           <button>Projetos</button>
+
         </nav>
+        <button className="close-modal">X</button>
       </Container>
     </Overlay>
   )

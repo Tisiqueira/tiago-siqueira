@@ -14,23 +14,41 @@ export const Overlay = styled.div`
 
 
 export const Container = styled.div`
+
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 450px;
-  background:#fff;
+  background:${({ theme }) => theme.colorBackground};
   border-radius: 4px;
   padding: 24px;
   box-shadow 0px 4px 10px rbag( 0,0,0,0.04);
   margin:32px;
 
-  & button{
+  & nav {
+    width:100%;
     padding:  24px;
-    display:flex;
+    display:grid;
     align-items: center;
     justify-content: space-beteween;
+  }
+
+  & button{
+    padding:  8px;
     border: none;
-    margin: 8px;
+    margin: 16px;
+    border-radius:4px;
+  }
+
+  .close-modal {
+    position:absolute;
+    right:48%;
+    top:3%;
+    color: red;
+    background: ${({ theme }) => theme.colorBackground};
+    font-size:16px;
+    padding:4px;
+
   }
 
 `;
