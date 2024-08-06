@@ -18,7 +18,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   background:${({ theme }) => theme.colorBackground};
   border-radius: 4px;
   padding: 24px;
@@ -27,27 +27,44 @@ export const Container = styled.div`
 
   & nav {
     width:100%;
-    padding:  24px;
-    display:grid;
+    display: grid;
+    gap:16px;
     align-items: center;
-    justify-content: space-beteween;
+    justify-content: center;
   }
 
   & button{
+    width: 100%;
     padding:  8px;
     border: none;
     margin: 16px;
     border-radius:4px;
+
   }
 
   .close-modal {
+    width:10%;
     position:absolute;
-    right:48%;
-    top:3%;
+    right:32%;
+    top:0;
     color: red;
-    background: ${({ theme }) => theme.colorBackground};
-    font-size:16px;
+    background: none;
+    font-size:24px;
     padding:4px;
+
+  }
+
+  & footer {
+    padding:8px;
+    margin-bottom:8px;
+  }
+
+  & img {
+    width: 8%;
+    position: absolute;
+    top:55%;
+    left:28%;
+
 
   }
 

@@ -1,4 +1,6 @@
+import logoDark from "../../assets/images/LogoDark.svg";
 import { Overlay, Container } from "./styles";
+
 
 export default function Modal() {
   return (
@@ -6,12 +8,16 @@ export default function Modal() {
       <Container>
         <nav>
           <button>Home</button>
-          <button>Sobre</button>
+          <button>Quem eu sou?</button>
           <button>Tecnologias</button>
           <button>Projetos</button>
+          <button>Contato</button>
 
-        </nav>
         <button className="close-modal">X</button>
+        </nav>
+        <footer>
+          <img src={logoDark} alt="TiSiqueira" />
+        </footer>
       </Container>
     </Overlay>
   )
