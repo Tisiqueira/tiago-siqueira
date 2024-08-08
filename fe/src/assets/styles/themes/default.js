@@ -1,4 +1,5 @@
 // eslint-disable-next-line
 export default {
-  colorBackground: "#110F40",
+  colorBackgroundDark: "#110F40",
+  colorBackgroundLight: "#E9E5FF",
 };
