@@ -18,5 +18,3 @@ export const Container = styled.div`
     width: 50px;
   }
 `;
-
-

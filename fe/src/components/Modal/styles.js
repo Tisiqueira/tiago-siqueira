@@ -1,17 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Overlay = styled.div`
-  background: rgba(0,0,0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(7px);
   position: absolute;
   width: 100%;
   height: 100%;
-  left:0;
-  top:0;
-
-
+  left: 0;
+  top: 0;
 `;
-
 
 export const Container = styled.div`
 
@@ -62,12 +59,10 @@ export const Container = styled.div`
   & img {
     width: 8%;
     position: absolute;
-    top:55%;
+    top:48%;
     left:28%;
 
 
   }
 
 `;
-
-
